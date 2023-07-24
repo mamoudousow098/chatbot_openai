@@ -67,6 +67,9 @@ def question_answers():
         return jsonify({"answer" : answer }), 200
 
 
+@app.route('/test', methods=['GET'])
+def get_tests():
+ return jsonify({ 'message': "It means the server works"}), 200
 
 
 if __name__ == '__main__':
